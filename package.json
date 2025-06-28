@@ -1,0 +1,42 @@
+{
+  "name": "create-discordjs-app",
+  "version": "0.1.0",
+  "description": "Create Discord.js application",
+  "bin": {
+    "create-discordjs-app": "./bin/create-discordjs-app.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "pnpm run build",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "discord.js",
+    "create-discordjs-app",
+    "cli",
+    "template",
+    "discord-bot"
+  ],
+  "homepage": "https://github.com/Yu-yu0202/create-discordjs-app#readme",
+  "bugs": {
+    "url": "https://github.com/Yu-yu0202/create-discordjs-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Yu-yu0202/create-discordjs-app.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Yu-yu0202",
+  "type": "module",
+  "dependencies": {
+    "cac": "^6.7.14",
+    "degit": "^2.8.4",
+    "execa": "^9.6.0",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/degit": "^2.8.6",
+    "@types/prompts": "^2.4.9",
+    "typescript": "^5.8.3"
+  }
+}
