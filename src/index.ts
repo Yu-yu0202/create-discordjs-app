@@ -8,9 +8,9 @@ const client = new Client({
 });
 
 client.once("ready", () => {
-    console.log(`✅Logged in as ${client.user.tag}`);
+    console.log(`✅ Logged in as ${client.user?.tag}`);
 });
 
-client.login(process.env.TOKEN).catch(err => {
-    console.error("❌Failed to login:", err);
-});
+client.login(process.env.TOKEN).catch((err: Error) => {
+    console.error("❌ Failed to login:", err);
+}); 
